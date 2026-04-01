@@ -941,19 +941,23 @@ h2 {
 
 @media (max-width: 500px) {
   .blog-container {
-    padding: 60px 64px 80px;
+    padding: 60px 20px 80px;
   }
   
   .article-title {
-    font-size: 36px;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 24px;
   }
   
   .article-intro {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.6;
   }
   
   .article-content p {
-    font-size: 15px;
+    font-size: 14px;
+    margin-bottom: 18px;
   }
   
   .breadcrumb-row {
@@ -963,7 +967,7 @@ h2 {
   }
   
   .post-date-header {
-    align-self: flex-end;
+    align-self: flex-start;
   }
 }
 
@@ -1007,6 +1011,140 @@ h2 {
   
 }
 
+/* iPhone-specific optimizations (320px - 375px) */
+@media (max-width: 375px) {
+  /* Typography scaling for small screens */
+  h1 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    font-size: 13px;
+  }
+  
+  .location-footer {
+    font-size: 11px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+  }
+  
+  .intro-text p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    word-break: break-word;
+  }
+  
+  /* Navigation adjustments */
+  .top-nav {
+    padding: 12px 16px;
+    gap: 8px;
+  }
+  
+  .luxury-nav {
+    padding: 12px 16px;
+  }
+  
+  .nav-left a {
+    font-size: 11px;
+  }
+  
+  .nav-right a {
+    font-size: 13px;
+    margin-left: 8px;
+  }
+  
+  .logo {
+    font-size: 16px;
+  }
+  
+  .luxury-nav .logo {
+    font-size: 22px;
+  }
+  
+  /* Container padding */
+  .container {
+    padding: 50px 16px 50px;
+    padding-block: 50px 50px;
+  }
+  
+  .blog-container {
+    padding: 50px 16px 60px;
+  }
+  
+  /* Work section */
+  .work-section .work-header,
+  .work-section .work-grid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .work-card {
+    padding: 20px;
+    min-height: auto;
+  }
+  
+  .work-card-title {
+    font-size: 16px;
+    margin: 12px 0 8px 0;
+  }
+  
+  .work-card-desc {
+    font-size: 13px;
+  }
+  
+  .work-title {
+    font-size: 24px;
+  }
+  
+  /* Footer */
+  .main-footer {
+    padding: 0 16px 40px;
+  }
+  
+  .footer-nav {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-copyright {
+    font-size: 12px;
+  }
+  
+  /* Blog items */
+  .blog-item {
+    padding: 24px 0;
+    gap: 8px;
+  }
+  
+  .blog-date {
+    font-size: 9px;
+    width: auto;
+  }
+  
+  .blog-title {
+    font-size: 16px;
+    margin: 0 8px;
+  }
+  
+  .post-item {
+    padding: 12px 0;
+  }
+  
+  .post-title {
+    font-size: 14px;
+  }
+  
+  .post-date {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 500px) {
   h1 {
     font-size: 40px;
@@ -1022,20 +1160,22 @@ h2 {
   
   .subtitle-row {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
+    width: 100%;
   }
   
   .location-footer {
-    align-self: center;
+    align-self: flex-start;
   }
   
   .top-nav {
-    padding: 20px 64px;
+    padding: 16px 20px;
+    gap: 12px;
   }
   
   .container {
-    padding: 60px 32px 65px;
+    padding: 60px 20px 65px;
   }
   
   .section-title {
@@ -1044,11 +1184,13 @@ h2 {
   
   .intro-text p {
     font-size: 15px;
+    text-align: left;
   }
   
   .post-item {
     flex-direction: column;
     gap: 4px;
+    align-items: flex-start;
   }
   
   .post-date {
@@ -1056,7 +1198,7 @@ h2 {
   }
   
   .main-footer {
-    padding: 0 64px 48px;
+    padding: 0 20px 48px;
   }
   
   .footer-content {
@@ -1067,23 +1209,45 @@ h2 {
   
   .footer-nav {
     gap: 16px;
+    flex-wrap: wrap;
   }
   
   
   .nav-left {
     gap: 12px;
+    flex-wrap: wrap;
   }
   
   .nav-left a {
-    font-size: 13px;
+    font-size: 12px;
   }
   
   .nav-right {
     gap: 12px;
+    flex-wrap: wrap;
   }
   
   .nav-right a {
     font-size: 14px;
+  }
+  
+  .work-section .work-header,
+  .work-section .work-grid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .work-header {
+    margin-bottom: 40px;
+  }
+  
+  .work-card {
+    padding: 24px;
+    min-height: auto;
+  }
+  
+  .work-card-title {
+    font-size: 18px;
   }
 }
 
@@ -1145,6 +1309,13 @@ h2 {
   background-color: #000;
   opacity: 0.06;
   padding-inline: clamp(24px, 6vw, 180px);
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  .header-divider {
+    padding-inline: 16px;
+  }
 }
 
 .header-wrapper {
@@ -1178,11 +1349,51 @@ h2 {
 .luxury-footer .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-stat;
+  align-items: flex-start;
   color: #555;
   font-size: 12px;
   letter-spacing: 0.05em;
   margin-bottom: 100px;
+}
+
+/* iPhone luxury nav adjustments */
+@media (max-width: 375px) {
+  .luxury-nav {
+    grid-template-columns: 1fr auto 1fr;
+    gap: 8px;
+  }
+  
+  .luxury-nav .nav-left {
+    justify-self: start;
+    min-width: 50px;
+  }
+  
+  .luxury-nav .nav-center {
+    justify-self: center;
+    flex-grow: 0;
+  }
+  
+  .luxury-nav .nav-right {
+    justify-self: end;
+    min-width: 50px;
+  }
+  
+  .luxury-footer {
+    padding: 80px 16px 50px;
+  }
+  
+  .luxury-footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .luxury-footer .footer-nav {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+  }
 }
 
 .luxury-footer .footer-copyright {
