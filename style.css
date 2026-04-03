@@ -1,5 +1,5 @@
-/* Import serif fonts */
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&family=Forum&family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap');
+/* Import serif fonts and sans fonts */
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&family=Forum&family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 
 /* BASIC RESET */
@@ -776,28 +776,33 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 28px;
+  gap: 40px;
   text-align: center;
 }
 
 .footer-copyright {
-  font-size: 14px;
+  font-size: 13px;
+  font-family: 'Newsreader', serif;
+  font-style: italic;
   color: #b8bfd4;
   font-weight: 400;
 }
 
 .footer-nav {
   display: flex;
-  gap: 64px;
+  gap: 48px;
   align-items: center;
   justify-content: center;
 }
 
 .footer-nav a {
-  font-size: 14px;
+  font-size: 11px;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
   color: #666;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   transition: color 0.2s;
 }
 
